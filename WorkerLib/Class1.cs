@@ -38,6 +38,11 @@ namespace WorkerLib
             Sex = obj.Sex;
             NumberOfPeopleInTheFamily = obj.NumberOfPeopleInTheFamily;
         }
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Name:{Name}\nFirst:{FirstName}\nSurname:{Surname}\nPlace:{Place}" +
+                $"\nDate:{Date}\nSex:{Sex}Number of people in the family:{NumberOfPeopleInTheFamily}");
+        }
     }
     public class Date
     {
