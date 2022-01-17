@@ -10,9 +10,9 @@ namespace WorkerLib
         public PlaceOfWork Place { set; get; }
         public Date Date { set; get; }
         public string Sex { set; get; }
-        public string NumberOfPeopleInTheFamily { set; get; }
+        public int NumberOfPeopleInTheFamily { set; get; }
         public Employee(string name, string firstname, string surname,
-            PlaceOfWork place, Date date, string sex, string nameofPF)
+            PlaceOfWork place, Date date, string sex, int nameofPF)
         {
             Name = name;
             FirstName = firstname;
@@ -38,10 +38,12 @@ namespace WorkerLib
             Sex = obj.Sex;
             NumberOfPeopleInTheFamily = obj.NumberOfPeopleInTheFamily;
         }
-        public void PrintInfoEmployee()
+        public void PrintInfoEmployee()                  
         {
-            Console.WriteLine($"Name:{Name}\nFirst:{FirstName}\nSurname:{Surname}\nPlace:{Place}" +
-                $"\nDate:{Date.Day}{Date.Mounth}{Date.Mounth}\nSex:{Sex}Number of people in the family:{NumberOfPeopleInTheFamily}");
+            Console.WriteLine($"Name:{Name}\nFirstname:{FirstName}\nSurname:{Surname}" +
+                $"\nCompany:{Place.CompanyName}\nPlace:{Place.Adress.Country} {Place.Adress.City}\nNumber House:{Place.Adress.NumberHouse}\nIndex:{Place.Adress.Index}" +
+                $"\nJob Evaluation:{Place.JobEvaluation}\nFeedback About The Job:{Place.FeedbackAboutTheJob}" +
+                $"\nDate:{Date.Day}-{Date.Mounth}-{Date.Year}\nSex:{Sex}\nNumber of people in the family:{NumberOfPeopleInTheFamily}");
         }
     }
     public class Date
