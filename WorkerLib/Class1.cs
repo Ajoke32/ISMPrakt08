@@ -80,6 +80,11 @@ namespace WorkerLib
             NumberHouse = obj.NumberHouse;
             Index = obj.Index;
         }
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Country:{Country}\nCity:{City}\nStreet:{Street}\nNumber House:{NumberHouse}" +
+                $"Index:{Index}");
+        }
     }
     public class PlaceOfWork
     {
