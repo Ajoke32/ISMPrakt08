@@ -41,7 +41,7 @@ namespace WorkerLib
         public void PrintInfoEmployee()
         {
             Console.WriteLine($"Name:{Name}\nFirst:{FirstName}\nSurname:{Surname}\nPlace:{Place}" +
-                $"\nDate:{Date}\nSex:{Sex}Number of people in the family:{NumberOfPeopleInTheFamily}");
+                $"\nDate:{Date.Day}{Date.Mounth}{Date.Mounth}\nSex:{Sex}Number of people in the family:{NumberOfPeopleInTheFamily}");
         }
     }
     public class Date
@@ -114,9 +114,8 @@ namespace WorkerLib
         }
         public void PrintInfoPlaceOfwork()
         {
-            //no commit
-            Console.WriteLine($" CompanyName:{ CompanyName}\nAdress:{Adress}\nJobEvaluation:{JobEvaluation}\nNumber House:{FeedbackAboutTheJob}");
+            Console.WriteLine($" CompanyName:{ CompanyName}" +
+                $"\nAdress:{Adress.Country}{Adress.Street}{Adress.NumberHouse}{Adress.Index}\nJobEvaluation:{JobEvaluation}\nNumber House:{FeedbackAboutTheJob}");
         }
     }
-   
 }
