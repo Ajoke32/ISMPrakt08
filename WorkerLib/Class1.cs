@@ -19,4 +19,12 @@ namespace WorkerLib
         public int Mounth { set; get; }
         public int Year { set; get; }
     }
+    public class TheAdress
+    {
+        public string Country { set; get; }
+        public string City { set; get; }
+        public string Street { set; get; }
+        public int NumberHouse { set; get; }
+        public string Index { set; get; }
+    }
 }
