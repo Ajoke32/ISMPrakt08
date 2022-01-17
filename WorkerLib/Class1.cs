@@ -56,7 +56,17 @@ namespace WorkerLib
         public string City { set; get; }
         public string Street { set; get; }
         public int NumberHouse { set; get; }
-        public string Index { set; get; }
+        public int Index { set; get; }
+        public TheAdress(string country, string city, string street,
+            int nubmerhouse, int index)
+        {
+            Country = country;
+            City = city;
+            Street = street;
+            NumberHouse = nubmerhouse;
+            Index = index;
+        }
+
     }
     public class PlaceOfWork
     {
