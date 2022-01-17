@@ -38,7 +38,7 @@ namespace WorkerLib
             Sex = obj.Sex;
             NumberOfPeopleInTheFamily = obj.NumberOfPeopleInTheFamily;
         }
-        public void PrintInfo()
+        public void PrintInfoEmployee()
         {
             Console.WriteLine($"Name:{Name}\nFirst:{FirstName}\nSurname:{Surname}\nPlace:{Place}" +
                 $"\nDate:{Date}\nSex:{Sex}Number of people in the family:{NumberOfPeopleInTheFamily}");
@@ -80,7 +80,7 @@ namespace WorkerLib
             NumberHouse = obj.NumberHouse;
             Index = obj.Index;
         }
-        public void PrintInfo()
+        public void PrintInfoAdress()
         {
             Console.WriteLine($"Country:{Country}\nCity:{City}\nStreet:{Street}\nNumber House:{NumberHouse}" +
                 $"Index:{Index}");
@@ -112,7 +112,7 @@ namespace WorkerLib
             JobEvaluation = obj.JobEvaluation;
             FeedbackAboutTheJob = obj.FeedbackAboutTheJob;
         }
-        public void PrintInfo()
+        public void PrintInfoPlaceOfwork()
         {
             //no commit
             Console.WriteLine($" CompanyName:{ CompanyName}\nAdress:{Adress}\nJobEvaluation:{JobEvaluation}\nNumber House:{FeedbackAboutTheJob}");
