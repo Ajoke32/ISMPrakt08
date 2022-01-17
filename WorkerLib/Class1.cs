@@ -66,7 +66,20 @@ namespace WorkerLib
             NumberHouse = nubmerhouse;
             Index = index;
         }
-
+        public TheAdress(string country, string city, string street)
+        {
+            Country = country;
+            City = city;
+            Street = street;
+        }
+        public TheAdress(TheAdress obj)
+        {
+            Country = obj.Country;
+            City = obj.City;
+            Street = obj.Street;
+            NumberHouse = obj.NumberHouse;
+            Index = obj.Index;
+        }
     }
     public class PlaceOfWork
     {
