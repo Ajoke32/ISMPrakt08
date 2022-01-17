@@ -105,6 +105,18 @@ namespace WorkerLib
             CompanyName = companyname;
             FeedbackAboutTheJob = text;
         }
+        public PlaceOfWork(PlaceOfWork obj)
+        {
+            CompanyName = obj.CompanyName;
+            Adress = obj.Adress;
+            JobEvaluation = obj.JobEvaluation;
+            FeedbackAboutTheJob = obj.FeedbackAboutTheJob;
+        }
+        public void PrintInfo()
+        {
+            //no commit
+            Console.WriteLine($" CompanyName:{ CompanyName}\nAdress:{Adress}\nJobEvaluation:{JobEvaluation}\nNumber House:{FeedbackAboutTheJob}");
+        }
     }
    
 }
