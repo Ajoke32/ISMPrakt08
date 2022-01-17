@@ -27,4 +27,11 @@ namespace WorkerLib
         public int NumberHouse { set; get; }
         public string Index { set; get; }
     }
+    public class PlaceOfWork
+    {
+        public string CompanyName { set; get; }
+        public TheAdress Adress { set; get; }
+        public int JobEvaluation { set; get; }
+        public string FeedbackAboutTheJob { set; get; }
+    }
 }
