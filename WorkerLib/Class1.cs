@@ -22,7 +22,12 @@ namespace WorkerLib
             Sex = sex;
             NumberOfPeopleInTheFamily = nameofPF;
         }
-
+        public Employee(string name, string firstname, string surname)
+        {
+            Name = name;
+            FirstName = firstname;
+            Surname = surname;
+        }
     }
     public class Date
     {
