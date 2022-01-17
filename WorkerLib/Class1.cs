@@ -11,7 +11,18 @@ namespace WorkerLib
         public Date Date { set; get; }
         public string Sex { set; get; }
         public string NumberOfPeopleInTheFamily { set; get; }
-       
+        public Employee(string name, string firstname, string surname,
+            PlaceOfWork place, Date date, string sex, string nameofPF)
+        {
+            Name = name;
+            FirstName = firstname;
+            Surname = surname;
+            Place = place;
+            Date = date;
+            Sex = sex;
+            NumberOfPeopleInTheFamily = nameofPF;
+        }
+
     }
     public class Date
     {
