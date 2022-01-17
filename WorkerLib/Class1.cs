@@ -49,6 +49,12 @@ namespace WorkerLib
         public int Day { set; get; }
         public int Mounth { set; get; }
         public int Year { set; get; }
+        public Date(int day, int mounth, int year)
+        {
+            Day = day;
+            Mounth = mounth;
+            Year = year;
+        }
     }
     public class TheAdress
     {
