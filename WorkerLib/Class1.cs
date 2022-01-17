@@ -92,5 +92,19 @@ namespace WorkerLib
         public TheAdress Adress { set; get; }
         public int JobEvaluation { set; get; }
         public string FeedbackAboutTheJob { set; get; }
+        public PlaceOfWork(string companyname, TheAdress adress, int job,
+           string text)
+        {
+            CompanyName = companyname;
+            Adress = adress;
+            JobEvaluation = job;
+            FeedbackAboutTheJob = text;
+        }
+        public PlaceOfWork(string companyname, string text)
+        {
+            CompanyName = companyname;
+            FeedbackAboutTheJob = text;
+        }
     }
+   
 }
