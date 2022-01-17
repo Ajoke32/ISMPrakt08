@@ -28,6 +28,16 @@ namespace WorkerLib
             FirstName = firstname;
             Surname = surname;
         }
+        public Employee(Employee obj)
+        {
+            Name = obj.Name;
+            FirstName = obj.FirstName;
+            Surname = obj.Surname;
+            Place = obj.Place;
+            Date = obj.Date;
+            Sex = obj.Sex;
+            NumberOfPeopleInTheFamily = obj.NumberOfPeopleInTheFamily;
+        }
     }
     public class Date
     {
